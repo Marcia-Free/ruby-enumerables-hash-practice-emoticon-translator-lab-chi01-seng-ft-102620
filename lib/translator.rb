@@ -6,11 +6,10 @@ require 'pry'
 def load_library(file_path)
   emoticons = YAML.load_file(file_path)
   translated_lib = {'get_meaning' => {},
-                    'get_emoticon' => {},
-                    meaning => {}
+                    'get_emoticon' => {}
                    }
                    
- # key_lib = {}
+ # key_lib = {emoticons}
 
   
   emoticons.each do |meaning, value|
