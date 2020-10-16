@@ -33,7 +33,7 @@ def get_english_meaning(file_path, emoticon)
   
   eng_meaning = key_lib['get_meaning'][emoticon]
   eng_meaning ? eng_meaning : "Sorry, that emoticon was not found"
-#  binding.pry
+  #binding.pry
 end
 
 
@@ -43,5 +43,5 @@ def get_japanese_emoticon(file_path, emoticon)
   
   jap_emoticon = key_lib['get_emoticon'][emoticon]
   jap_emoticon ? jap_emoticon : "Sorry, that emoticon was not found"
-  
+  #binding.pry
 end
