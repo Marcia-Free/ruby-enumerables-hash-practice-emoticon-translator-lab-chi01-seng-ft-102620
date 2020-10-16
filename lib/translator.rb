@@ -11,7 +11,6 @@ def load_library(file_path)
                    
   key_lib = {}
 
-  
   emoticons.each do |meaning, value|
     english = value[0]
     japanese = value[1]
@@ -26,7 +25,7 @@ def load_library(file_path)
    
   end
   key_lib
-  translated_lib
+  #translated_lib
 
  # binding.pry
 end
