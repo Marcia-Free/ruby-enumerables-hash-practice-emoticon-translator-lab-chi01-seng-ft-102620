@@ -42,6 +42,6 @@ def get_japanese_emoticon(file_path, emoticon)
   key_lib = load_library(file_path)
   
   jap_emoticon = key_lib['get_emoticon'][emoticon]
-  emoticon ? jap_emoticon : "Sorry, that emoticon was not found"
+  jap_emoticon ? jap_emoticon : "Sorry, that emoticon was not found"
   
 end
