@@ -6,7 +6,8 @@ require 'pry'
 def load_library(file_path)
   emoticons = YAML.load_file(file_path)
   translated_lib = {'get_meaning' => {},
-                    'get_emoticon' => {}
+                    'get_emoticon' => {},
+                    meaning => {}
                    }
                    
  # key_lib = {}
