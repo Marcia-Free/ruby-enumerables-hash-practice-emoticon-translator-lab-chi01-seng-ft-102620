@@ -24,7 +24,7 @@ def load_library(file_path)
    
   end
   translated_lib
-  binding.pry
+  #binding.pry
 end
 
 
