@@ -9,7 +9,7 @@ def load_library(file_path)
                     'get_emoticon' => {}
                    }
                    
- # key_lib = {emoticons}
+  key_lib = {emoticons => {} }
 
   
   emoticons.each do |meaning, value|
@@ -24,6 +24,7 @@ def load_library(file_path)
    
   end
   translated_lib
+  key_lib
   #binding.pry
 end
 
