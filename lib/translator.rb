@@ -43,9 +43,11 @@ end
 
 def get_english_meaning(file_path, jap_emoticon)
   key_lib = load_library(file_path)
+  results = ""
   
-  eng_meaning = key_lib[meaning][:japanese][jap_emoticon]
-  if eng_meaning.index
+  jap_meaning = key_lib[meaning][:japanese][jap_emoticon]
+  eng_meaning = key_lib[meaning][:english]
+  #results = 
   eng_meaning ? eng_meaning : "Sorry, that emoticon was not found"
   binding.pry
 end
