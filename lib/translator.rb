@@ -5,11 +5,11 @@ require 'pry'
 
 def load_library(file_path)
   emoticons = YAML.load_file(file_path)
-  translated_lib = {'get_meaning' => {},
-                    'get_emoticon' => {},
-                   }
+  key_lib = {'get_meaning' => {},
+             'get_emoticon' => {},
+            }
                    
-  key_lib = {}
+  #key_lib = {}
 
   emoticons.each do |meaning, value|
     english = value[0]
@@ -20,20 +20,20 @@ def load_library(file_path)
    key_lib[meaning][:english] = english
    key_lib[meaning][:japanese] = japanese
     
-   translated_lib['get_meaning'][japanese] = meaning
-   translated_lib['get_emoticon'][english] = japanese
+   key_lib['get_meaning'][japanese] = meaning
+   key_lib['get_emoticon'][english] = japanese
    
   end
-  translated_lib
+  #translated_lib
   key_lib
 end
 
 
 def get_english_meaning(file_path, emoticon)
-  translated_lib = load_library(file_path)
+  key_lib = load_library(file_path)
   
-  eng_meaning = translated_lib['get_meaning'][emoticon]
-  eng_meaning ? eng_meaning : "Sorry, that emoticon was not found"
+  #eng_meaning = translated_lib['get_meaning'][emoticon]
+  #eng_meaning ? eng_meaning : "Sorry, that emoticon was not found"
   binding.pry
 end
 
