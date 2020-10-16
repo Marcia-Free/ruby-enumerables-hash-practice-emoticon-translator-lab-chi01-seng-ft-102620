@@ -23,8 +23,9 @@ def load_library(file_path)
    translated_lib['get_emoticon'][english] = japanese
    
   end
-  translated_lib
   key_lib
+  translated_lib
+
   #binding.pry
 end
 
