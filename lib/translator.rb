@@ -30,7 +30,7 @@ end
 
 
 def get_english_meaning(file_path, emoticon)
-  key_lib = load_library(file_path)
+  translated_lib = load_library(file_path)
   
   
  
