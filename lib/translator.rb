@@ -20,8 +20,8 @@ def load_library(file_path)
    key_lib[meaning]['english'] = english
    key_lib[meaning]['japanese'] = japanese
     
-   *translated_lib['get_meaning'][japanese] = meaning
-   *translated_lib['get_emoticon'][english] = japanese
+   translated_lib['get_meaning'][japanese] = meaning
+   translated_lib['get_emoticon'][english] = japanese
    
   end
   *translated_lib
