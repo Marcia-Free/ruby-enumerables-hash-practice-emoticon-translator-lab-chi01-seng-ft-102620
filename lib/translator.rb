@@ -7,6 +7,7 @@ def load_library(file_path)
   emoticons = YAML.load_file(file_path)
   key_lib = {'get_meaning' => {},
              'get_emoticon' => {},
+             'translation' => {}
             }
                    
   #key_lib = {}
@@ -15,10 +16,10 @@ def load_library(file_path)
     english = value[0]
     japanese = value[1]
     
+   key_lib['translation'][meaning] = {}
    #key_lib[meaning] = {}
-   key_lib[meaning] = {}
-   key_lib[meaning][:english] = english
-   key_lib[meaning][:japanese] = japanese
+   key_lib['translation'][meaning][:english] = english
+   key_lib['translation'][meaning][:japanese] = japanese
     
    key_lib['get_meaning'][japanese] = meaning
    key_lib['get_emoticon'][english] = japanese
