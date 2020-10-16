@@ -32,9 +32,8 @@ end
 def get_english_meaning(file_path, emoticon)
   translated_lib = load_library(file_path)
   
-  
- 
-  #eng_meaning ? eng_meaning : "Sorry, that emoticon was not found"
+  eng_meaning = translated_lib['get_meaning'][emoticon]
+  eng_meaning ? eng_meaning : "Sorry, that emoticon was not found"
   binding.pry
 end
 
