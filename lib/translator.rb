@@ -9,7 +9,6 @@ def load_library(file_path)
              'get_emoticon' => {},
             }
                    
-  #key_lib = {}
 
   emoticons.each do |meaning, value|
     english = value[0]
@@ -23,10 +22,10 @@ def load_library(file_path)
    key_lib['get_emoticon'][english] = japanese
    
   end
-  #translated_lib
   key_lib
  # binding.pry
 end
+
 
 
 def get_english_meaning(file_path, emoticon)
@@ -38,10 +37,11 @@ def get_english_meaning(file_path, emoticon)
 end
 
 
+
 def get_japanese_emoticon(file_path, emoticon)
   key_lib = load_library(file_path)
   
-  #emoticon = key_lib[meaning][:japanese][]
-  #emoticon ? jap_emoticon : "Sorry, that emoticon was not found"
+  emoticon = key_lib['get_emoticon'][emoticon]
+  emoticon ? jap_emoticon : "Sorry, that emoticon was not found"
   
 end
