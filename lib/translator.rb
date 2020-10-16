@@ -9,7 +9,7 @@ def load_library(file_path)
              'get_emoticon' => {},
             }
                    
-  key_lib = {}
+  #key_lib = {}
 
   emoticons.each do |meaning, value|
     english = value[0]
