@@ -9,15 +9,15 @@ def load_library(file_path)
                     'get_emoticon' => {}
                    }
                    
-  key_lib = {}
+ # key_lib = {}
 
   
   emoticons.each do |meaning, value|
     english = value[0]
     japanese = value[1]
     
-    key_lib[meaning]['english'] = english
-    key_lib[meaning]['japanese'] = japanese
+   # key_lib[meaning]['english'] = english
+   # key_lib[meaning]['japanese'] = japanese
     
    translated_lib['get_meaning'][japanese] = meaning
    translated_lib['get_emoticon'][english] = japanese
