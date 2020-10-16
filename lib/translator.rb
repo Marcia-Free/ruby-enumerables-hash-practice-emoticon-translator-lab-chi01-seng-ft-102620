@@ -15,7 +15,6 @@ def load_library(file_path)
     english = value[0]
     japanese = value[1]
     
-   key_lib
    key_lib[meaning] = {}
    key_lib[meaning][:english] = english
    key_lib[meaning][:japanese] = japanese
@@ -33,12 +32,10 @@ end
 def get_english_meaning(file_path, emoticon)
   key_lib = load_library(file_path)
   
-  #eng_meaning = translated_lib['get_meaning'][emoticon]
-  #eng_meaning ? eng_meaning : "Sorry, that emoticon was not found"
-  #binding.pry
+  eng_meaning = key_lib['get_meaning'][emoticon]
+  eng_meaning ? eng_meaning : "Sorry, that emoticon was not found"
+  binding.pry
 end
-
-
 
 
 def get_japanese_emoticon(file_path, emoticon)
